@@ -1,37 +1,42 @@
 [
   {
     "name": "Collection Stanley",
-    "description": "Découvrez les gobelets viraux Stanley Quencher H2.0. Gardent vos boissons glacées 48h. Plusieurs couleurs disponibles.",
+    "description": "Découvrez les gobelets viraux Stanley Quencher H2.0. Gardent vos boissons glacées 48h. Indispensable pour votre hydratation en 2026.",
     "price": "À partir de 50$",
     "url": "https://www.amazon.ca/s?k=Stanley+Quencher&tag=trouvetout-20",
-    "category": "MARQUE ⭐"
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61Mcl7G6KOL._AC_SL1500_.jpg"
   },
   {
     "name": "Gamme Ninja Creami",
-    "description": "Transformez tout en crème glacée ou sorbet. Explorez les différents modèles de la gamme Ninja Creami.",
+    "description": "Transformez tout en crème glacée, sorbet ou gelato. Explorez les différents modèles de la gamme Ninja Creami pour des desserts sains.",
     "price": "À partir de 229$",
     "url": "https://www.amazon.ca/s?k=Ninja+Creami&tag=trouvetout-20",
-    "category": "MARQUE ⭐"
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61Nl8q2V92L._AC_SL1500_.jpg"
   },
   {
     "name": "Purificateurs Levoit",
-    "description": "Respirez un air pur ce printemps. Gamme complète de purificateurs HEPA intelligents pour toute la maison.",
+    "description": "Respirez un air pur ce printemps. Gamme complète de purificateurs HEPA intelligents contrôlables via WiFi pour toute la maison.",
     "price": "À partir de 120$",
     "url": "https://www.amazon.ca/s?k=Levoit+Smart+Air+Purifier&tag=trouvetout-20",
-    "category": "MARQUE ⭐"
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/71m8qS8YlCL._AC_SL1500_.jpg"
   },
   {
     "name": "Univers Nespresso",
-    "description": "Le café de qualité barista à la maison. Découvrez les machines Vertuo et les nouvelles capsules 2026.",
+    "description": "Le café de qualité barista à la maison. Découvrez les nouvelles machines Vertuo Pop+ colorées et les capsules tendances 2026.",
     "price": "À partir de 149$",
     "url": "https://www.amazon.ca/s?k=Nespresso+Vertuo+Pop&tag=trouvetout-20",
-    "category": "MARQUE ⭐"
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61YhB14+OUL._AC_SL1500_.jpg"
   },
   {
     "name": "Station de Charge Murale",
-    "description": "6 prises AC + 3 ports USB avec veilleuse intelligente. L'accessoire ultime pour libérer vos comptoirs.",
+    "description": "6 prises AC + 3 ports USB avec veilleuse intelligente réglable. L'accessoire ultime pour organiser vos câbles de cuisine.",
     "price": "29.99$",
     "url": "https://www.amazon.ca/dp/B08R9P9CJS?tag=trouvetout-20",
-    "category": "PRODUIT"
+    "category": "TECH & GADGETS",
+    "image": "https://m.media-amazon.com/images/I/61NPrX68l9L._AC_SL1200_.jpg"
   }
 ]
