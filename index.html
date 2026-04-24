@@ -12,6 +12,8 @@
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .amazon-btn { background: #FF9900; color: #131A22; }
         .amazon-btn:hover { background: #e68a00; }
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
+        #mobile-menu.hidden { display: none; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -25,14 +27,23 @@
                 </div>
                 <h1 class="text-2xl font-bold text-gray-800 tracking-tight">BOUTIQUE-2-INCLUS</h1>
             </div>
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#" class="text-blue-600">Accueil</a>
                 <a href="#catalogue" class="hover:text-blue-600">Le Catalogue Tout Inclus</a>
-                <a href="#" class="hover:text-blue-600">Contact</a>
+                <a href="mailto:kenbouchard2025@gmail.com" class="hover:text-blue-600">Contact</a>
             </nav>
-            <div class="md:hidden">
+            <!-- Mobile Toggle -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
                 <i class="fas fa-bars text-2xl text-gray-600"></i>
-            </div>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-lg">
+            <a href="#" class="block font-bold text-blue-600">Accueil</a>
+            <a href="#catalogue" class="block font-medium text-gray-600 hover:text-blue-600 transition">Le Catalogue Tout Inclus</a>
+            <a href="mailto:kenbouchard2025@gmail.com" class="block font-medium text-gray-600 hover:text-blue-600 transition">Contact</a>
         </div>
     </header>
 
@@ -113,18 +124,28 @@
             <div class="pt-8 border-t border-gray-800">
                 <p class="font-bold text-white mb-2">MERCI D'AVOIR VISITÉ MON SITE</p>
                 <p class="text-sm">&copy; 2026 Boutique-2-Inclus. Tous droits réservés.</p>
-                <div class="mt-4 flex justify-center space-x-6">
-                    <a href="#" class="hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
-                    <a href="#" class="hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
-                </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Menu Toggle Logic
+        const menuBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
         async function loadProducts() {
             try {
-                // For direct GitHub Pages, products.json must be in the same folder
                 const response = await fetch('products.json');
                 const products = await response.json();
                 const list = document.getElementById('product-list');
