@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Stanley Quencher H2.0",
+    "description": "Le gobelet viral qui garde vos boissons froides pendant 48 heures. L'accessoire indispensable de l'année 2026.",
+    "price": "59.00$",
+    "url": "https://www.amazon.ca/s?k=Stanley+Quencher&tag=trouvetout-20",
+    "category": "MA BOUTIQUE"
+  },
+  {
+    "name": "Station de Charge Murale Intelligente",
+    "description": "Optimisez votre espace avec 6 prises AC et 3 ports USB. Indispensable pour votre bureau ou cuisine.",
+    "price": "29.99$",
+    "url": "https://www.amazon.ca/s?k=Smart+Home+Power+Strip&tag=trouvetout-20",
+    "category": "MA BOUTIQUE"
+  }
+]
