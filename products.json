@@ -1,16 +1,37 @@
 [
   {
-    "name": "Stanley Quencher H2.0",
-    "description": "Le gobelet viral qui garde vos boissons froides pendant 48 heures. L'accessoire indispensable de l'année 2026.",
-    "price": "59.00$",
+    "name": "Collection Stanley",
+    "description": "Découvrez les gobelets viraux Stanley Quencher H2.0. Gardent vos boissons glacées 48h. Plusieurs couleurs disponibles.",
+    "price": "À partir de 50$",
     "url": "https://www.amazon.ca/s?k=Stanley+Quencher&tag=trouvetout-20",
-    "category": "MA BOUTIQUE"
+    "category": "MARQUE ⭐"
   },
   {
-    "name": "Station de Charge Murale Intelligente",
-    "description": "Optimisez votre espace avec 6 prises AC et 3 ports USB. Indispensable pour votre bureau ou cuisine.",
+    "name": "Gamme Ninja Creami",
+    "description": "Transformez tout en crème glacée ou sorbet. Explorez les différents modèles de la gamme Ninja Creami.",
+    "price": "À partir de 229$",
+    "url": "https://www.amazon.ca/s?k=Ninja+Creami&tag=trouvetout-20",
+    "category": "MARQUE ⭐"
+  },
+  {
+    "name": "Purificateurs Levoit",
+    "description": "Respirez un air pur ce printemps. Gamme complète de purificateurs HEPA intelligents pour toute la maison.",
+    "price": "À partir de 120$",
+    "url": "https://www.amazon.ca/s?k=Levoit+Smart+Air+Purifier&tag=trouvetout-20",
+    "category": "MARQUE ⭐"
+  },
+  {
+    "name": "Univers Nespresso",
+    "description": "Le café de qualité barista à la maison. Découvrez les machines Vertuo et les nouvelles capsules 2026.",
+    "price": "À partir de 149$",
+    "url": "https://www.amazon.ca/s?k=Nespresso+Vertuo+Pop&tag=trouvetout-20",
+    "category": "MARQUE ⭐"
+  },
+  {
+    "name": "Station de Charge Murale",
+    "description": "6 prises AC + 3 ports USB avec veilleuse intelligente. L'accessoire ultime pour libérer vos comptoirs.",
     "price": "29.99$",
-    "url": "https://www.amazon.ca/s?k=Smart+Home+Power+Strip&tag=trouvetout-20",
-    "category": "MA BOUTIQUE"
+    "url": "https://www.amazon.ca/dp/B08R9P9CJS?tag=trouvetout-20",
+    "category": "PRODUIT"
   }
 ]
