@@ -11,7 +11,9 @@
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         .amazon-btn { background: #FF9900; color: #131A22; }
         .amazon-btn:hover { background: #e68a00; }
+        .category-tab { color: #374151; border-color: #e5e7eb; background-color: white; }
         .category-tab.active { background-color: #2563eb; color: white; border-color: #2563eb; }
+        .category-tab:hover:not(.active) { border-color: #2563eb; color: #2563eb; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900">
@@ -23,12 +25,12 @@
                 <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">
                     <i class="fas fa-lightbulb"></i>
                 </div>
-                <h1 class="text-2xl font-bold text-gray-800 tracking-tight text-white uppercase italic font-black text-gray-800">BOUTIQUE-2-INCLUS</h1>
+                <h1 class="text-2xl font-bold text-gray-800 tracking-tight uppercase italic font-black">BOUTIQUE-2-INCLUS</h1>
             </div>
-            <nav class="hidden md:flex space-x-6 font-medium items-center">
-                <a href="index.html" class="hover:text-blue-600">Accueil</a>
+            <nav class="hidden md:flex space-x-6 font-medium items-center text-white uppercase italic font-black">
+                <a href="index.html" class="hover:text-blue-600 text-gray-800">Accueil</a>
                 <a href="catalogue.html" class="text-blue-600">Le Catalogue Tout Inclus</a>
-                <div class="flex items-center space-x-4 border-l border-gray-100 pl-6 text-white uppercase italic font-black">
+                <div class="flex items-center space-x-4 border-l border-gray-100 pl-6">
                     <a href="https://pin.it/5qO5Lj32x" target="_blank" class="text-red-600 hover:text-red-700 text-xl" title="Pinterest">
                         <i class="fab fa-pinterest"></i>
                     </a>
@@ -36,10 +38,10 @@
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
-                <a href="mailto:kenbouchard2025@gmail.com" class="hover:text-blue-600 border border-blue-600 px-4 py-1 rounded-full text-sm">Contact</a>
+                <a href="mailto:kenbouchard2025@gmail.com" class="hover:text-blue-600 border border-blue-600 px-4 py-1 rounded-full text-sm text-gray-800">Contact</a>
             </nav>
             <div class="flex items-center space-x-4 md:hidden">
-                <a href="https://www.instagram.com/1boutique2tech?igsh=MXU3N2d2MWJjYWs0YQ==" target="_blank" class="text-pink-600 text-2xl">
+                <a href="https://www.instagram.com/1boutique2tech?igsh=MXU3N2d2MWJjYWs0YQ==" target="_blank" class="text-pink-600 text-2xl font-black italic uppercase">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <button id="menu-toggle" class="focus:outline-none">
@@ -47,7 +49,7 @@
                 </button>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-lg text-center text-white uppercase italic font-black">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-lg text-center font-black italic uppercase">
             <a href="index.html" class="block font-medium text-gray-600 hover:text-blue-600">Accueil</a>
             <a href="catalogue.html" class="block font-bold text-blue-600">Le Catalogue Tout Inclus</a>
             <div class="flex justify-center space-x-6 py-2">
@@ -59,8 +61,8 @@
     </header>
 
     <!-- Page Title -->
-    <section class="bg-blue-600 text-white py-16 text-white uppercase italic font-black tracking-widest">
-        <div class="container mx-auto px-4 text-center text-white uppercase italic font-black">
+    <section class="bg-blue-600 text-white py-16 text-center font-black italic uppercase tracking-widest">
+        <div class="container mx-auto px-4">
             <h2 class="text-4xl font-black uppercase tracking-widest">Le Catalogue Tout Inclus</h2>
             <p class="mt-4 text-xl opacity-90 italic">Les pépites du moment sélectionnées par notre IA</p>
         </div>
@@ -68,32 +70,32 @@
 
     <!-- Categories / Tabs -->
     <section class="bg-white border-b border-gray-100 sticky top-[72px] z-40">
-        <div class="container mx-auto px-4 overflow-x-auto text-white uppercase italic font-black">
-            <div class="flex space-x-4 py-6 min-w-max justify-center text-white uppercase italic font-black">
-                <button onclick="filterProducts('all')" class="category-tab active px-6 py-2 rounded-full border border-gray-200 font-bold text-sm transition hover:border-blue-600 uppercase">TOUT</button>
-                <button onclick="filterProducts('MARQUE ⭐')" class="category-tab px-6 py-2 rounded-full border border-gray-200 font-bold text-sm transition hover:border-blue-600 uppercase">Marques ⭐</button>
-                <button onclick="filterProducts('MAISON & CUISINE')" class="category-tab px-6 py-2 rounded-full border border-gray-200 font-bold text-sm transition hover:border-blue-600 uppercase">Maison & Cuisine</button>
-                <button onclick="filterProducts('TECH & GADGETS')" class="category-tab px-6 py-2 rounded-full border border-gray-200 font-bold text-sm transition hover:border-blue-600 uppercase">Tech & Gadgets</button>
-                <button onclick="filterProducts('PLEIN AIR & BBQ')" class="category-tab px-6 py-2 rounded-full border border-gray-200 font-bold text-sm transition hover:border-blue-600 uppercase">Plein Air & BBQ</button>
+        <div class="container mx-auto px-4 overflow-x-auto py-6">
+            <div class="flex space-x-4 min-w-max justify-center font-black italic uppercase">
+                <button id="btn-all" onclick="filterProducts('all')" class="category-tab active px-6 py-2 rounded-full border font-bold text-sm transition uppercase">TOUT</button>
+                <button id="btn-marque" onclick="filterProducts('MARQUE ⭐')" class="category-tab px-6 py-2 rounded-full border font-bold text-sm transition uppercase">Marques ⭐</button>
+                <button id="btn-maison" onclick="filterProducts('MAISON & CUISINE')" class="category-tab px-6 py-2 rounded-full border font-bold text-sm transition uppercase">Maison & Cuisine</button>
+                <button id="btn-tech" onclick="filterProducts('TECH & GADGETS')" class="category-tab px-6 py-2 rounded-full border font-bold text-sm transition uppercase">Tech & Gadgets</button>
+                <button id="btn-pleinair" onclick="filterProducts('PLEIN AIR & BBQ')" class="category-tab px-6 py-2 rounded-full border font-bold text-sm transition uppercase">Plein Air & BBQ</button>
             </div>
         </div>
     </section>
 
     <!-- Product Grid Section -->
-    <section class="py-20 text-white uppercase italic font-black">
-        <div class="container mx-auto px-4 text-white uppercase italic font-black">
-            <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-white uppercase italic font-black">
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Loading State -->
-                <div class="text-center col-span-full py-20 text-white uppercase italic font-black">
+                <div class="text-center col-span-full py-20">
                     <div class="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600 mb-4"></div>
-                    <p class="text-gray-500 font-medium italic">Synchronisation automatique...</p>
+                    <p class="text-gray-500 font-medium italic font-black uppercase italic">Synchronisation en cours...</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-16 mt-auto text-center">
+    <footer class="bg-gray-900 text-gray-400 py-16 mt-auto text-center font-black italic uppercase">
         <div class="container mx-auto px-4">
             <h1 class="text-2xl font-black text-white mb-8 uppercase italic">Boutique-2-Inclus</h1>
             <div class="flex justify-center space-x-10 mb-12">
@@ -121,33 +123,34 @@
                 renderProducts(allProducts);
             } catch (e) {
                 console.error('Error loading products:', e);
-                document.getElementById('product-list').innerHTML = '<p class="text-center col-span-full text-red-500 font-bold italic font-black uppercase">Erreur de chargement...</p>';
+                document.getElementById('product-list').innerHTML = '<p class="text-center col-span-full text-red-500 font-bold uppercase italic font-black">Erreur de chargement...</p>';
             }
         }
 
         function renderProducts(products) {
             const list = document.getElementById('product-list');
             if (products.length === 0) {
-                list.innerHTML = `<div class="col-span-full text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200"><p class="text-gray-400 text-xl font-medium uppercase font-black italic">Aucun produit</p></div>`;
+                list.innerHTML = `<div class="col-span-full text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200"><p class="text-gray-400 text-xl font-medium uppercase font-black italic">Aucun produit trouvé</p></div>`;
                 return;
             }
 
             list.innerHTML = products.map(p => `
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden product-card flex flex-col">
-                    <div class="h-64 bg-white relative group overflow-hidden flex items-center justify-center p-4">
-                         <img src="${p.image || 'https://via.placeholder.com/400x400?text=Produit'}" alt="${p.name}" class="max-h-full object-contain transition-transform duration-500 group-hover:scale-110">
+                    <div class="h-64 bg-white relative group overflow-hidden flex items-center justify-center p-6 border-b border-gray-50">
+                         <img src="${p.image}" alt="${p.name}" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110" 
+                              onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400?text=${encodeURIComponent(p.name)}';">
                          <div class="absolute top-4 left-4">
-                            <span class="bg-blue-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest italic uppercase">${p.category || 'VÉRIFIÉ IA'}</span>
+                            <span class="bg-blue-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest italic font-black">${p.category || 'VÉRIFIÉ IA'}</span>
                          </div>
-                         ${p.category === 'MARQUE ⭐' ? '<div class="absolute top-4 right-4 text-blue-600 text-xl font-black italic uppercase"><i class="fas fa-star"></i></div>' : ''}
+                         ${p.category.includes('MARQUE') ? '<div class="absolute top-4 right-4 text-blue-600 text-xl font-black italic uppercase"><i class="fas fa-star"></i></div>' : ''}
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-xl font-black text-gray-900 mb-4 h-14 overflow-hidden uppercase italic">${p.name}</h4>
-                        <p class="text-gray-600 mb-8 h-18 overflow-hidden leading-relaxed font-black italic uppercase font-medium italic">${p.description}</p>
+                        <h4 class="text-xl font-black text-gray-900 mb-4 h-14 overflow-hidden uppercase italic font-black">${p.name}</h4>
+                        <p class="text-gray-600 mb-8 h-18 overflow-hidden leading-relaxed font-medium italic font-black">${p.description}</p>
                         <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
-                            <span class="text-2xl font-black text-gray-900 italic font-black uppercase">${p.price || ''}</span>
+                            <span class="text-2xl font-black text-gray-900 italic font-black">${p.price || ''}</span>
                             <a href="${p.url}" target="_blank" class="amazon-btn px-6 py-3 rounded-xl font-black text-sm shadow-md transition transform active:scale-95 uppercase italic">
-                               ${p.category === 'MARQUE ⭐' ? 'Explorer ➔' : 'Acheter ➔'}
+                               ${p.category.includes('MARQUE') ? 'Explorer ➔' : 'Acheter ➔'}
                             </a>
                         </div>
                     </div>
@@ -158,10 +161,10 @@
         function filterProducts(category) {
             document.querySelectorAll('.category-tab').forEach(tab => {
                 tab.classList.remove('active');
-                if (tab.innerText.toUpperCase() === category.toUpperCase() || (category === 'all' && tab.innerText === 'TOUT')) {
-                    tab.classList.add('active');
-                }
             });
+            
+            const eventTarget = window.event ? window.event.target : null;
+            if(eventTarget) eventTarget.classList.add('active');
 
             if (category === 'all') {
                 renderProducts(allProducts);
