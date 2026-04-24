@@ -1,7 +1,7 @@
 [
   {
     "name": "Collection Stanley",
-    "description": "Découvrez les gobelets viraux Stanley Quencher H2.0. Gardent vos boissons glacées 48h. Indispensable pour votre hydratation en 2026.",
+    "description": "Les gobelets viraux Quencher H2.0 qui gardent vos boissons glacées 48h. L'indispensable de 2026.",
     "price": "À partir de 50$",
     "url": "https://www.amazon.ca/s?k=Stanley+Quencher&tag=trouvetout-20",
     "category": "MARQUE ⭐",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Gamme Ninja Creami",
-    "description": "Transformez tout en crème glacée, sorbet ou gelato. Explorez les différents modèles de la gamme Ninja Creami pour des desserts sains.",
+    "description": "Créez vos sorbets et crèmes glacées maison en un bouton. La tendance cuisine de l'année.",
     "price": "À partir de 229$",
     "url": "https://www.amazon.ca/s?k=Ninja+Creami&tag=trouvetout-20",
     "category": "MARQUE ⭐",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Purificateurs Levoit",
-    "description": "Respirez un air pur ce printemps. Gamme complète de purificateurs HEPA intelligents contrôlables via WiFi pour toute la maison.",
+    "description": "L'air pur à portée de main. Gamme de purificateurs intelligents certifiés HEPA.",
     "price": "À partir de 120$",
     "url": "https://www.amazon.ca/s?k=Levoit+Smart+Air+Purifier&tag=trouvetout-20",
     "category": "MARQUE ⭐",
@@ -25,18 +25,98 @@
   },
   {
     "name": "Univers Nespresso",
-    "description": "Le café de qualité barista à la maison. Découvrez les nouvelles machines Vertuo Pop+ colorées et les capsules tendances 2026.",
+    "description": "Vivez l'expérience barista chez vous avec les nouvelles machines Vertuo Pop+.",
     "price": "À partir de 149$",
     "url": "https://www.amazon.ca/s?k=Nespresso+Vertuo+Pop&tag=trouvetout-20",
     "category": "MARQUE ⭐",
     "image": "https://m.media-amazon.com/images/I/61YhB14+OUL._AC_SL1500_.jpg"
   },
   {
-    "name": "Station de Charge Murale",
-    "description": "6 prises AC + 3 ports USB avec veilleuse intelligente réglable. L'accessoire ultime pour organiser vos câbles de cuisine.",
-    "price": "29.99$",
+    "name": "Stations de Charge Murales",
+    "description": "Gagnez de la place et organisez vos câbles avec nos solutions multi-prises USB.",
+    "price": "À partir de 25$",
     "url": "https://www.amazon.ca/s?k=Smart+Wall+Charging+Station+Multi+Outlet&tag=trouvetout-20",
-    "category": "TECH & GADGETS",
+    "category": "MARQUE ⭐",
     "image": "https://m.media-amazon.com/images/I/61NPrX68l9L._AC_SL1200_.jpg"
+  },
+  {
+    "name": "BBQ Intelligent",
+    "description": "Cuisson parfaite garantie avec les thermomètres sans fil contrôlables par smartphone.",
+    "price": "À partir de 90$",
+    "url": "https://www.amazon.ca/s?k=Wireless+Meat+Thermometer&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/619W48qfI+L._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Lumière Solaire",
+    "description": "Lanternes gonflables et étanches pour le camping et les pannes de courant.",
+    "price": "À partir de 35$",
+    "url": "https://www.amazon.ca/s?k=Inflatable+Solar+Lantern&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/71u+k-U7KCL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Mousseurs à Lait",
+    "description": "Une mousse onctueuse en 15 secondes pour vos cafés matinaux.",
+    "price": "À partir de 15$",
+    "url": "https://www.amazon.ca/s?k=Milk+Frother+Handheld&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/617D+77v7jL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Aspirateurs Robots",
+    "description": "Déléguez le ménage à nos assistants intelligents avec station de vidange auto.",
+    "price": "À partir de 250$",
+    "url": "https://www.amazon.ca/s?k=Robot+Vacuum+Self+Empty&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61Jp0W0j9XL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Audio Sans Fil",
+    "description": "Écouteurs antibruit de haute qualité pour le travail ou le sport.",
+    "price": "À partir de 80$",
+    "url": "https://www.amazon.ca/s?k=Wireless+Noise+Cancelling+Earbuds&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61S9df6M9SL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Animaux Connectés",
+    "description": "Distributeurs de nourriture WiFi pour prendre soin de vos compagnons à distance.",
+    "price": "À partir de 100$",
+    "url": "https://www.amazon.ca/s?k=Smart+Pet+Feeder+WiFi&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61+D+G9+LpL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Énergie Portable",
+    "description": "Stations d'énergie solaires pour vos aventures en plein air.",
+    "price": "À partir de 300$",
+    "url": "https://www.amazon.ca/s?k=Portable+Power+Station&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/71Y+z+6+LpL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Domotique Kasa/Tapo",
+    "description": "Prises intelligentes pour automatiser votre maison facilement.",
+    "price": "À partir de 20$",
+    "url": "https://www.amazon.ca/s?k=Smart+Plug+WiFi&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/51A+z+6+LpL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Bureau Ergonomique",
+    "description": "Chaises et accessoires pour un télétravail confortable et productif.",
+    "price": "À partir de 200$",
+    "url": "https://www.amazon.ca/s?k=Ergonomic+Office+Chair&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/61A+z+6+LpL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Fitness & Coaching",
+    "description": "Bandes de résistance et accessoires pour votre gym à la maison.",
+    "price": "À partir de 30$",
+    "url": "https://www.amazon.ca/s?k=Resistance+Bands+Set&tag=trouvetout-20",
+    "category": "MARQUE ⭐",
+    "image": "https://m.media-amazon.com/images/I/71A+z+6+LpL._AC_SL1500_.jpg"
   }
 ]
